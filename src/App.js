@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import RTCMesh from 'react-rtc-real';
-require('react-rtc-real/assets/index.css');
+import RTCMesh from './RTCMesh';
 
 function App() {
   return (
     <div className="App">
-      <RTCMesh URL="wss://877bd7b0.ngrok.io" />
+      <RTCMesh URL="wss://61a994e0.ngrok.io" mediaConstraints={{ video: true, audio: true }}/>
     </div>
   );
 }
